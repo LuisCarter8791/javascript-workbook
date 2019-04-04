@@ -12,7 +12,42 @@ function rockPaperScissors(hand1, hand2) {
 
   // Write code here
 
+if (hand1 === "rock"  && hand2 === "rock") {
+  console.log("This is a tie")
 }
+if (hand1 === "rock"  && hand2 === "paper") {
+  console.log("Hand 2 is the winner")
+}
+if (hand1 === "rock"  && hand2 === "scissors") {
+  console.log("Hand 1 is the winner")
+}
+if (hand1 === "paper"  && hand2 === "paper") {
+  console.log("This is a tie")
+}
+if (hand1 === "paper"  && hand2 === "scissors") {
+  console.log("Hand 2 is the winner")
+}
+if (hand1 === "paper"  && hand2 === "rock") {
+  console.log("Hand 1 is the winner")
+}
+if (hand1 === "scissors"  && hand2 === "rock") {
+  console.log("Hand 2 is the winner")
+}
+if (hand1 === "scissors"  && hand2 === "paper") {
+  console.log("Hand 1 is the winner")
+}
+if (hand1 === "scissors"  && hand2 === "scissors") {
+  console.log("This is a tie")
+}
+
+
+
+
+
+
+
+}
+
 
 function getPrompt() {
   rl.question('hand1: ', (answer1) => {
@@ -22,6 +57,7 @@ function getPrompt() {
     });
   });
 }
+getPrompt()
 
 // Tests
 
